@@ -58,3 +58,13 @@ def predict_daily(request: DailyRouteRequest):
         "predicted_time_hours": round(predicted_time / 60, 2),
         "confidence": 0.89
     }
+
+# Weekly Route Prediction API
+@app.post("/predict/weekly")
+def predict_weekly():
+
+    return {
+        "monday": ["Store_A", "Store_B"],
+        "tuesday": ["Store_C", "Store_D"],
+        "wednesday": ["Store_E"],
+        "weekly_distance": "120
